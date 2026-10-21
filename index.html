@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ali Asif — Mechanical Design Portfolio</title>
+<style>
+  :root{
+    --bg:#0b0d10;
+    --bg2:#12151a;
+    --text:#e8ebef;
+    --muted:#9aa4b2;
+    --accent:#ff6a3d;
+    --line:#242a31;
+  }
+  @media (prefers-color-scheme: light){
+    :root{
+      --bg:#f7f7f5;
+      --bg2:#ffffff;
+      --text:#15181c;
+      --muted:#5b6673;
+      --accent:#d9480f;
+      --line:#e4e4e1;
+    }
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55;
+  }
+  .wrap{max-width:900px;margin:0 auto;padding:0 20px;}
+  header.hero{
+    padding:72px 0 48px;
+    border-bottom:1px solid var(--line);
+  }
+  .hero h1{
+    font-size:2.4rem;
+    margin:0 0 6px;
+    letter-spacing:-0.02em;
+  }
+  .hero .role{
+    color:var(--accent);
+    font-weight:600;
+    font-size:1.05rem;
+    margin-bottom:18px;
+  }
+  .hero p{color:var(--muted);max-width:65ch;margin:0;}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;}
+  .tag{
+    border:1px solid var(--line);
+    padding:5px 12px;
+    border-radius:999px;
+    font-size:0.82rem;
+    color:var(--muted);
+  }
+  section{padding:48px 0;border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  h2{
+    font-size:1.1rem;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    color:var(--muted);
+    margin:0 0 24px;
+  }
+  .project{
+    background:var(--bg2);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:24px 26px;
+    margin-bottom:20px;
+  }
+  .project h3{margin:0 0 6px;font-size:1.2rem;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+  .badge{
+    font-size:0.68rem;
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+    border:1px solid var(--accent);
+    color:var(--accent);
+    padding:2px 8px;
+    border-radius:999px;
+  }
+  .project .meta{color:var(--accent);font-size:0.85rem;font-weight:600;margin:4px 0 12px;}
+  .project ul{margin:12px 0 0;padding-left:20px;color:var(--muted);}
+  .project ul li{margin-bottom:6px;}
+  .project p.desc{margin:0 0 8px;color:var(--text);}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media (max-width:640px){.grid2{grid-template-columns:1fr;}}
+  .card{
+    background:var(--bg2);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:18px 20px;
+  }
+  .card h4{margin:0 0 8px;font-size:1rem;}
+  .card p{margin:0;color:var(--muted);font-size:0.92rem;}
+  .edu-item{margin-bottom:18px;}
+  .edu-item .when{color:var(--muted);font-size:0.85rem;}
+  footer{padding:40px 0 80px;color:var(--muted);font-size:0.9rem;}
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .contact-row{display:flex;flex-wrap:wrap;gap:18px;margin-top:10px;}
+  .cert-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px;}
+  .cert{
+    border:1px solid var(--line);
+    background:var(--bg2);
+    padding:8px 14px;
+    border-radius:8px;
+    font-size:0.85rem;
+    color:var(--muted);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <h1>Ali Asif</h1>
+    <div class="role">Mechanical Design — SolidWorks | Mechanical Assemblies | Gear Systems | Advanced Surfacing</div>
+    <p>Mechanical engineer (UET Lahore) currently completing an MSc in Electric and Electrical Vehicle Engineering at the University of East London. SolidWorks CAD Design Associate (CSWA) and Surfacing Professional (CSWP), with project experience spanning mechanism design, gearboxes, and automotive surfacing.</p>
+    <div class="tags">
+      <span class="tag">SolidWorks</span>
+      <span class="tag">Mechanical Assemblies</span>
+      <span class="tag">Gear Systems</span>
+      <span class="tag">Advanced Surfacing</span>
+      <span class="tag">ANSYS / Abaqus</span>
+    </div>
+  </header>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Mole-Inspired Drilling Robot</h3>
+      <p class="desc">Bio-inspired drilling robot concept for mining applications, based on the burrowing behaviour of a mole.</p>
+      <ul>
+        <li>Expandable drill bit that opens from the body while rotating, targeting a 350&nbsp;mm bore</li>
+        <li>Linear actuator used to change left/right direction</li>
+        <li>Triangular chain drive supporting movement through the bore</li>
+        <li>Primary materials: Aluminum 7075 and steel; many components designed as sheet-metal parts suitable for laser cutting</li>
+        <li>Full exploded technical drawing and rendered assembly produced</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>Overhead Lifting Crane Gearbox</h3>
+      <p class="desc">High-reduction transmission concept for controlled lifting and heavy-duty material handling.</p>
+      <ul>
+        <li>Overall reduction ratio of 1:284</li>
+        <li>High-strength alloy steel specified for gears, intended for CNC machining</li>
+        <li>Encoder at the output shaft to monitor position, speed and direction</li>
+        <li>Transducer at the motor shaft to convert mechanical torque into an electrical signal for monitoring</li>
+        <li>Full assembly breakdown with bill of materials and engineering drawing</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>Complete Mountain Bike Assembly</h3>
+      <p class="desc">Full SolidWorks model built for mechanical accuracy and high-quality visualisation — frame, suspension, drivetrain and wheels.</p>
+      <ul>
+        <li>Role: Lead Product Designer and 3D Modeler</li>
+        <li>12-speed drivetrain and gear-shifter assembly, individually modelled chain components</li>
+        <li>Complete exploded view documentation of frame and drivetrain</li>
+        <li>Final advertising-quality renders produced for a bicycle manufacturing/marketing context</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>Pagani Huayra — Surface Modelling Study</h3>
+      <p class="desc">Advanced SolidWorks surfacing project focused on complex automotive form and aerodynamic exterior geometry.</p>
+      <ul>
+        <li>Complex exterior curves and wind-sculpted body form built using SolidWorks surfacing tools</li>
+        <li>Challenge: capturing the vehicle's visual character while maintaining a coherent, technically controlled surface model</li>
+        <li>Multiple photorealistic renders produced with applied materials and textures</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>WiFi-Controlled 3D-Printed RC Jeep <span class="badge">In Progress</span></h3>
+      <p class="desc">Independent build: a custom RC vehicle designed from scratch in SolidWorks and 3D printed, controlled over WiFi from a phone browser.</p>
+      <ul>
+        <li>Rear differential with diff lock and custom bevel gear sets</li>
+        <li>Geared steering knuckle with 10° kingpin inclination, requiring non-orthogonal (80°) bevel gear pairs</li>
+        <li>ESP32-based control system handling combined steering and throttle over a self-hosted web server</li>
+        <li>Iterative structural redesign of the steering knuckle to address stress concentration, including split-part printing with interlocking joints</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="edu-item">
+      <strong>MSc Electric and Electrical Vehicle Engineering</strong><br>
+      <span class="when">University of East London</span>
+    </div>
+    <div class="edu-item">
+      <strong>BSc Mechanical Engineering</strong><br>
+      <span class="when">University of Engineering and Technology (UET), Lahore</span>
+    </div>
+    <div class="cert-row">
+      <span class="cert">CSWA — SolidWorks CAD Design Associate (Mechanical Design), issued March 2023</span>
+      <span class="cert">CSWP — SolidWorks Surfacing Professional (Advanced Surfacing), issued March 2023</span>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Open to placement and graduate opportunities in mechanical design, EV engineering, or product development.</p>
+    <div class="contact-row">
+      <a href="mailto:aliasif13579111315@gmail.com">aliasif13579111315@gmail.com</a>
+      <a href="tel:+447440419223">+44 7440 419223</a>
+      <a href="https://linkedin.com/in/ali-asif-1b2884269" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> Ali Asif — Slough, England
+  </footer>
+
+</div>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
